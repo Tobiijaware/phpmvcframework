@@ -1,0 +1,15 @@
+{
+    "name": "hp/phpframework",
+    "authors": [
+        {
+            "name": "Tobiijaware",
+            "email": "miketobicarter@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+        "psr-4": {
+            "app\\": "./"
+        }
+    }
+}
