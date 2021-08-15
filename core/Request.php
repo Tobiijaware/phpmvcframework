@@ -16,6 +16,10 @@ class Request
 
    }
 
+   public function getFullUrl(){
+
+   }
+
    public function method(){
         return strtolower($_SERVER['REQUEST_METHOD']);
    }

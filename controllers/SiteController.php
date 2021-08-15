@@ -12,6 +12,7 @@ use app\core\Session;
 class SiteController extends Controller {
     public function home()
     {
+
         $params = [
             'name' => "Ijaware"
         ];
@@ -23,16 +24,18 @@ class SiteController extends Controller {
 
     public function contact()
     {
-        Session::start();
-        Session::set('name', 'Tobi');
-        print_r(Session::all());
+        //Session::start();
 
+
+        //print_r(date('jS M Y',time()));
+        //print_r(date('jS M Y',time() + (24*60*60)));
+        //print_r(date('jS M Y',time() + (1 + 365 + 24*60*60)));
         //return $this->render('contact');
     }
 
 
     public function handleContact(Request $request){
-        $body = $request->getBody();
+        $body = $request->getPath();
         var_dump($body);
         exit;
     }
